@@ -66,7 +66,7 @@ const client = createClient({
   useCdn: false,
 });
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const malerier = await client.fetch(
     `*[_type == "malerier"]{_rev,_id,tittel,slug,publiser, pris,"bilde": bilde.asset->url}`
   );
