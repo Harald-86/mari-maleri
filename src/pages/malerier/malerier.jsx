@@ -11,6 +11,7 @@ import { useEffect } from "react";
 export default function Malerier(malerier) {
   console.log(malerier.malerier);
   const resultat = malerier.malerier;
+  console.log("har produktet oppdatert seg?", resultat);
 
   /* useEffect(() => {
     console.log("this is inside the useeffect", resultat);
@@ -68,7 +69,7 @@ const client = createClient({
   useCdn: false,
 });
 
-export async function getInitialProps() {
+export async function getStaticProps() {
   const malerier = await client.fetch(
     `*[_type == "malerier"]{_rev,_id,tittel,slug,publiser, pris,"bilde": bilde.asset->url}`
   );
