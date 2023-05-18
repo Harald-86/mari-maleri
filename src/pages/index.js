@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.scss";
+/* import styles from "@/styles/Home.module.scss"; */
 import Link from "next/link";
-import Heading from "@/components/common/Heading";
+/* import Heading from "@/components/common/Heading"; */
 import nyheter from "../../public/images/nyheter.jpg";
 import malerier from "../../public/images/malerier.jpg";
 import flokk from "../../public/images/flokk.jpg";

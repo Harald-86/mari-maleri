@@ -4,10 +4,15 @@ import Image from "next/image";
 import imageUrlBuilder from "@sanity/image-url";
 import Link from "next/link";
 import Navbar from "@/components/nav/navbar";
+import { useEffect } from "react";
 
 export default function Malerier(malerier) {
   console.log(malerier.malerier);
   const resultat = malerier.malerier;
+
+  useEffect(() => {
+    console.log("this is inside the useeffect", resultat);
+  }, [resultat]);
 
   return (
     <>
