@@ -39,7 +39,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="card">
-            <Link href="/nyheter/Nyheter">
+            <Link href="/malerier/malerier">
               <Image
                 src={malerier}
                 alt="maleri av Mari Tomter"
