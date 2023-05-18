@@ -1,3 +1,5 @@
+"use client";
+
 import Head from "next/head";
 import { createClient } from "next-sanity";
 import Image from "next/image";
