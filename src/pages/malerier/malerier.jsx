@@ -1,4 +1,4 @@
-"use client";
+"use server";
 
 import Head from "next/head";
 import { createClient } from "next-sanity";
@@ -12,10 +12,10 @@ export default function Malerier(malerier) {
   console.log(malerier.malerier);
   const resultat = malerier.malerier;
 
-  useEffect(() => {
+  /* useEffect(() => {
     console.log("this is inside the useeffect", resultat);
   }, [resultat]);
-
+ */
   return (
     <>
       <Head>
