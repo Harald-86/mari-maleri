@@ -25,22 +25,34 @@ export default function Navbar(props) {
       </div>
       <ul className={isActive ? "nav-links" : "hide"}>
         <li>
-          <Link href="/malerier/malerier" className="links">
+          <Link
+            href="/malerier/malerier"
+            onClick={ToggleClass}
+            className="links"
+          >
             Malerier
           </Link>
         </li>
         <li>
-          <Link href="/galleri/galleriet" className="links">
+          <Link
+            href="/galleri/galleriet"
+            onClick={ToggleClass}
+            className="links"
+          >
             Galleri
           </Link>
         </li>
         <li>
-          <Link href="/om/ommeg" className="links">
+          <Link href="/om/ommeg" onClick={ToggleClass} className="links">
             Om meg
           </Link>
         </li>
         <li>
-          <Link href="/spesial/spesial" className="links spesialbestilling">
+          <Link
+            href="/spesial/spesial"
+            onClick={ToggleClass}
+            className="links spesialbestilling"
+          >
             Spesial bestilling?
           </Link>
         </li>

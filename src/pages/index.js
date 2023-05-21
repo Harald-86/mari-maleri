@@ -24,7 +24,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Navbar />
         <section className="card__section">
           <div className="card">
             <Link href="/nyheter/Nyheter">

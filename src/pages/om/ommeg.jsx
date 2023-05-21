@@ -12,7 +12,6 @@ export default function Malerier() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Navbar />
         <h1>Om meg</h1>
       </main>
     </>

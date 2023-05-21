@@ -12,8 +12,9 @@ export default function Malerier() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Navbar />
-        <h1>Galleriet</h1>
+        <section>
+          <h1>yo</h1>
+        </section>
       </main>
     </>
   );

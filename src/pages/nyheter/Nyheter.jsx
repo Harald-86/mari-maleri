@@ -12,7 +12,6 @@ export default function Nyheter() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Navbar />
         <Heading size="1" title="Nyheter" />
       </main>
     </>
