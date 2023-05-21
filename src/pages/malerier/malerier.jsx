@@ -23,8 +23,9 @@ export default function Malerier(malerier) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <Navbar />
         <section>
-          <Navbar />
+          <h1>yei</h1>
           {resultat.map((sortert, index) => {
             console.log("sortet", sortert.tittel);
             console.log("slug", sortert.slug);
