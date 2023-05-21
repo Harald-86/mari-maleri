@@ -23,7 +23,7 @@ export default function Malerier(malerier) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="container">
+        <section>
           <Navbar />
           {resultat.map((sortert, index) => {
             console.log("sortet", sortert.tittel);
@@ -36,16 +36,18 @@ export default function Malerier(malerier) {
                     href={`/malerier/details/[slug]`}
                     as={`/malerier/details/${sortert.slug.current}`}
                     key={index}
-                    className="maleri"
+                    className="malerier__link"
                   >
-                    <Image
-                      src={sortert.bilde + "?auto=format"}
-                      alt="Maleri malt av Mari Tomter"
-                      width={250}
-                      height={250}
-                    />
-                    <p className="maleri__tittel">{sortert.tittel}</p>
-                    <p className="maleri__pris">kr {sortert.pris},-</p>
+                    <div className="malerier__bilde">
+                      <Image
+                        src={sortert.bilde + "?auto=format"}
+                        alt="Maleri malt av Mari Tomter"
+                        fill={true}
+                      />
+                    </div>
+
+                    <p className="malerier__tittel">{sortert.tittel}</p>
+                    <p className="malerier__pris">kr {sortert.pris},-</p>
                   </Link>
                 ) : (
                   ""
@@ -53,7 +55,7 @@ export default function Malerier(malerier) {
               </>
             );
           })}
-        </div>
+        </section>
       </main>
     </>
   );

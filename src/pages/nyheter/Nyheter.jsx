@@ -12,10 +12,8 @@ export default function Nyheter() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="container">
-          <Navbar />
-          <Heading size="1" title="Nyheter" />
-        </div>
+        <Navbar />
+        <Heading size="1" title="Nyheter" />
       </main>
     </>
   );
