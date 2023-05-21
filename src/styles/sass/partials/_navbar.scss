@@ -2,10 +2,11 @@ nav {
   background-color: #fffffff5;
   display: flex;
   justify-content: space-between;
+  position: relative;
   align-items: center;
   gap: 18px;
   padding: 15px 50px;
-
+  z-index: 1;
   color: white;
 }
 
