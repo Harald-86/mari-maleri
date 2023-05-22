@@ -15,7 +15,6 @@ export default function Post({ post }) {
       </Head>
       <main>
         <div className="container">
-          <Navbar />
           <div detail>
             <h1>{post.tittel}</h1>
             <Image

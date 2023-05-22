@@ -24,6 +24,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <section className="bestilling">
+          <p>
+            Ønsker du et maleri på bestilling, ta kontakt
+            <span className="bestilling--link">
+              <Link href="https://www.vg.no">her</Link>
+            </span>
+          </p>
+        </section>
         <section className="card__section">
           <div className="card">
             <Link href="/nyheter/Nyheter">
@@ -32,7 +40,7 @@ export default function Home() {
                 alt="maleri av Mari Tomter"
                 className="card__bilde"
               />
-              <div className="kort-text">Nyheter</div>
+              <div className="kort-text">Nytt</div>
             </Link>
           </div>
           <div className="card">
@@ -45,6 +53,7 @@ export default function Home() {
               <div className="kort-text">Malerier</div>
             </Link>
           </div>
+
           <div className="card">
             <Link href="/nyheter/Nyheter">
               <Image

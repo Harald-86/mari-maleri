@@ -1,8 +1,9 @@
 import Head from "next/head";
+import { createClient } from "next-sanity";
 
-import Navbar from "@/components/nav/navbar";
-
-export default function Malerier() {
+export default function Malerier(omMeg) {
+  const bioData = omMeg.omMeg;
+  console.log("Fant jeg noe data? ", bioData);
   return (
     <>
       <Head>
@@ -12,8 +13,37 @@ export default function Malerier() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1>Om meg</h1>
+        {bioData.map((about) => {
+          return (
+            <div key={about.title} className="about">
+              <div className="about__profile">
+                <h1 className="about__profile--title">{about.title}</h1>
+                <p>bilde av deg kommer, eller hva tenker du?</p>
+              </div>
+              <div className="about__bio">
+                <p className="about__bio--text">{about.ommeg}</p>
+              </div>
+            </div>
+          );
+        })}
       </main>
     </>
   );
+}
+
+const client = createClient({
+  projectId: "4i1q7pgh",
+  dataset: "production",
+  apiVersion: "2022-03-25",
+  useCdn: false,
+});
+
+export async function getServerSideProps() {
+  const omMeg = await client.fetch(`*[_type == "about"]{title, ommeg}`);
+
+  return {
+    props: {
+      omMeg,
+    },
+  };
 }

@@ -1,0 +1,9 @@
+.bestilling {
+  text-transform: uppercase;
+  text-align: center;
+
+  &--link a {
+    color: red;
+    margin-left: 0.3rem;
+  }
+}

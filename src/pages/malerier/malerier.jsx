@@ -1,18 +1,11 @@
 import Head from "next/head";
 import { createClient } from "next-sanity";
 import Image from "next/image";
-import imageUrlBuilder from "@sanity/image-url";
 import Link from "next/link";
-import Navbar from "@/components/nav/navbar";
-import { useEffect } from "react";
 
 export default function Malerier(malerier) {
   console.log(malerier.malerier);
   const resultat = malerier.malerier;
-  console.log("har produktet oppdatert seg?", resultat);
-  useEffect(() => {
-    console.log("UseEffect ?", resultat);
-  }, []);
 
   return (
     <>

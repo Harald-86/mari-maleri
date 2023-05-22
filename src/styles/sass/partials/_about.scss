@@ -1,0 +1,16 @@
+.about {
+  display: flex;
+  flex-wrap: wrap;
+
+  max-width: 1100px;
+  background-color: rgb(62, 243, 183);
+  padding: 1rem;
+
+  &__profile {
+    margin: 4rem;
+  }
+
+  &__bio {
+    margin-left: 4rem;
+  }
+}

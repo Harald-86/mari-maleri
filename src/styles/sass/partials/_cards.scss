@@ -8,6 +8,24 @@
 }
 .card {
   margin: 10px;
+  a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    font-weight: 700;
+    img {
+      box-shadow: 0 5px 9px rgba($color: #5e5e5e, $alpha: 0.25);
+    }
+  }
+  a:hover {
+    color: #cd85db;
+    transition: 1.1s;
+    img {
+      box-shadow: none;
+      transition: 1.1s;
+    }
+  }
 }
 
 .card__bilde {
