@@ -24,14 +24,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <section className="bestilling">
-          <p>
-            Ønsker du et maleri på bestilling, ta kontakt
-            <span className="bestilling--link">
-              <Link href="https://www.vg.no">her</Link>
-            </span>
-          </p>
-        </section>
         <section className="card__section">
           <div className="card">
             <Link href="/nyheter/Nyheter">

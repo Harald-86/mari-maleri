@@ -43,6 +43,11 @@ export default function Navbar(props) {
           </Link>
         </li>
         <li>
+          <Link href="/faq/faq" onClick={ToggleClass} className="links">
+            FAQ
+          </Link>
+        </li>
+        <li>
           <Link href="/om/ommeg" onClick={ToggleClass} className="links">
             Om meg
           </Link>
