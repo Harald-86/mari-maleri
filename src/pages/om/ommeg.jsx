@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { createClient } from "next-sanity";
+import KontaktForm from "@/components/form/kontaktform";
 
 export default function Malerier(omMeg) {
   const bioData = omMeg.omMeg;
@@ -26,6 +27,7 @@ export default function Malerier(omMeg) {
             </div>
           );
         })}
+        <KontaktForm />
       </main>
     </>
   );
