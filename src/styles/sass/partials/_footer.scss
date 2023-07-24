@@ -1,4 +1,37 @@
 footer {
+  width: 100%;
+  height: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+
+  .footer {
+    &__header {
+      font-size: 2rem;
+      text-transform: capitalize;
+    }
+    &__header span {
+      color: #cd85db;
+      font-weight: 400;
+    }
+    &__header a {
+      text-decoration: none;
+    }
+    &__header a:visited {
+      color: #000;
+    }
+    &__links {
+      ul {
+        list-style-type: none;
+      }
+      li {
+        padding: 0.2rem;
+      }
+    }
+  }
+  .some {
+    font-size: 2rem;
+    color: purple;
+  }
 }

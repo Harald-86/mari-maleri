@@ -3,6 +3,12 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer>
+      <div className="footer__header">
+        <Link href="https://www.instagram.com/mari_maleri/">
+          mari<span>m</span>aleri
+          <i className="fa fa-instagram some" />
+        </Link>
+      </div>
       <div className="footer__links">
         <ul>
           <li>
@@ -15,14 +21,14 @@ export default function Footer() {
             <Link href="/">Kontakt meg</Link>
           </li>
           <li>
-            <Link href="/">Link</Link>
+            <Link href="/">Galleri</Link>
           </li>
           <li>
-            <Link href="/">Links</Link>
+            <Link href="/">Om meg</Link>
           </li>
         </ul>
       </div>
-      <div>Copyright &copy; Morten Tomter | {new Date().getFullYear()}</div>
+      <div> &copy; {new Date().getFullYear()} | Morten Tomter</div>
     </footer>
   );
 }

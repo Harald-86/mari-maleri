@@ -17,6 +17,7 @@ export default function Malerier(malerier) {
       </Head>
       <main>
         <h1>yei</h1>
+        <div className="malerier__"></div>
         {resultat.map((sortert, index) => {
           console.log("sortet", sortert.tittel);
           console.log("slug", sortert.slug);
