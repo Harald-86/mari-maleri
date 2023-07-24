@@ -5,8 +5,8 @@ export default function Footer() {
     <footer>
       <div className="footer__header">
         <Link href="https://www.instagram.com/mari_maleri/">
-          mari<span>m</span>aleri
           <i className="fa fa-instagram some" />
+          mari<span>m</span>aleri
         </Link>
       </div>
       <div className="footer__links">

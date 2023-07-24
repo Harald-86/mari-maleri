@@ -68,3 +68,9 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 440px) {
+  footer {
+    justify-content: center !important;
+  }
+}
