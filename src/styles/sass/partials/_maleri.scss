@@ -1,5 +1,21 @@
 .malerier__bilde {
   position: relative;
-  max-width: 400px;
+  width: 400px;
   height: 400px;
+}
+
+.malerier {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.malerier__info {
+  padding-left: 4.3rem;
+}
+
+.malerier h1 {
+  width: 100%;
+  text-align: center;
 }
