@@ -11,8 +11,26 @@
   flex-wrap: wrap;
 }
 
+.malerier__link {
+  text-decoration: none;
+}
+.malerier__link:visited {
+  color: #000;
+}
+
 .malerier__info {
-  padding-left: 4.3rem;
+  text-align: center;
+
+  &--tittel {
+    color: #000;
+    text-transform: capitalize;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  &--pris {
+    font-weight: 300;
+    text-decoration: underline solid #9c5993 1px;
+  }
 }
 
 .malerier h1 {
